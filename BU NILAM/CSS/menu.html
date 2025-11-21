@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Goodlife Kitchen - Menu</title>
+
+  <!-- gunakan styles utama yang sama dengan index -->
+  <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+
+  <!-- topbar (sama dengan index) -->
+  <header class="topbar">
+    <div class="inner topbar-inner">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Goodlife Kitchen" class="brand-logo" onerror="this.style.display='none'">
+        <div class="brand-text">
+          <span class="brand-name">Goodlife Kitchen</span>
+          <small class="brand-tag">Hidup lebih sehat, rasa tetap nikmat</small>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Main">
+        <a class="nav-item" href="index.html">Beranda</a>
+        <a class="nav-item active" href="menu.html">Menu</a>
+        <a class="nav-item" href="kontak.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- hero (menu page smaller hero, tetap full-bleed) -->
+  <section class="hero-wrap" style="height:36vh;">
+    <img src="assets/restoran.jpg" alt="Suasana Goodlife Kitchen" class="hero-bg" onerror="this.style.display='none'">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-inner inner" style="align-items:flex-end;">
+      <div class="hero-left" style="max-width:100%;">
+        <h1 class="hero-title" style="font-size:32px; margin-bottom:6px;">Menu Andalan Kami</h1>
+        <p class="hero-lead" style="max-width:760px;">Kumpulan pilihan menu sehat, disiapkan dari bahan berkualitas. Klik tiap item untuk detail atau pesan.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- main content -->
+  <main class="site-main">
+    <div class="inner">
+
+      <!-- makanan -->
+      <section class="card">
+        <h3 class="card-title" style="margin-top:0; color:var(--accent);">Menu Makanan</h3>
+
+        <!-- grid menu makanan -->
+        <div class="features-grid" style="margin-top:14px;">
+          <article class="feature">
+            <img src="assets/nasgor.jpg" alt="Nasi Goreng Sehat" style="width:100%; border-radius:8px; margin-bottom:10px;" onerror="this.style.display='none'">
+            <h4 style="margin:6px 0 6px;">Nasi Goreng Sehat</h4>
+            <p style="margin:0 0 8px; color:#444;">Dimasak dengan minyak zaitun dan ayam organik.</p>
+            <div style="font-weight:700; color:var(--accent-2);">Rp25.000</div>
+          </article>
+
+          <article class="feature">
+            <img src="assets/sop.jpg" alt="Sop Sayur Bergizi" style="width:100%; border-radius:8px; margin-bottom:10px;" onerror="this.style.display='none'">
+            <h4 style="margin:6px 0 6px;">Sop Sayur Bergizi</h4>
+            <p style="margin:0 0 8px; color:#444;">Hangat, rendah garam, cocok untuk segala usia.</p>
+            <div style="font-weight:700; color:var(--accent-2);">Rp20.000</div>
+          </article>
+
+          <article class="feature">
+            <img src="assets/salad.jpg" alt="Mix Salad" style="width:100%; border-radius:8px; margin-bottom:10px;" onerror="this.style.display='none'">
+            <h4 style="margin:6px 0 6px;">Mix Salad</h4>
+            <p style="margin:0 0 8px; color:#444;">Kombinasi sayur & buah segar dengan dressing madu-lemon.</p>
+            <div style="font-weight:700; color:var(--accent-2);">Rp28.000</div>
+          </article>
+        </div>
+      </section>
+
+      <!-- minuman -->
+      <section class="card">
+        <h3 class="card-title" style="margin-top:0; color:var(--accent);">Menu Minuman</h3>
+
+        <div class="features-grid" style="margin-top:14px;">
+          <article class="feature">
+            <img src="assets/jeruk.jpg" alt="Jus Jeruk Segar" style="width:100%; border-radius:8px; margin-bottom:10px;" onerror="this.style.display='none'">
+            <h4 style="margin:6px 0 6px;">Jus Jeruk Segar</h4>
+            <p style="margin:0 0 8px; color:#444;">Perasan jeruk asli tanpa gula tambahan.</p>
+            <div style="font-weight:700; color:var(--accent-2);">Rp12.000</div>
+          </article>
+
+          <article class="feature">
+            <img src="assets/teh.jpeg" alt="Es Teh Tawar" style="width:100%; border-radius:8px; margin-bottom:10px;" onerror="this.style.display='none'">
+            <h4 style="margin:6px 0 6px;">Es Teh Tawar</h4>
+            <p style="margin:0 0 8px; color:#444;">Penyegar alami, tanpa pemanis buatan.</p>
+            <div style="font-weight:700; color:var(--accent-2);">Rp7.000</div>
+          </article>
+
+          <article class="feature">
+            <img src="assets/mineral.jpg" alt="Air Mineral" style="width:100%; border-radius:8px; margin-bottom:10px;" onerror="this.style.display='none'">
+            <h4 style="margin:6px 0 6px;">Air Mineral</h4>
+            <p style="margin:0 0 8px; color:#444;">Air mineral kemasan.</p>
+            <div style="font-weight:700; color:var(--accent-2);">Rp5.000</div>
+          </article>
+        </div>
+      </section>
+
+      <!-- contact / footer info -->
+      <section class="card contact" style="text-align:center;">
+        <h3 class="card-title" style="margin-top:0; color:var(--accent);">Kontak & Lokasi</h3>
+        <p style="margin:6px 0;">📍 Jl. Sehat No.1 — Telp: (021) 1234-5678</p>
+        <p style="margin:6px 0;">🕒 Buka: 08:00 - 20:00</p>
+        <p class="socials" style="margin-top:8px;">
+          <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a> •
+          <a href="https://wa.me/6212345678" target="_blank" rel="noopener">WhatsApp</a>
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner" style="display:flex; justify-content:space-between; gap:12px; align-items:center; flex-wrap:wrap;">
+      <div>&copy; 2025 Goodlife Kitchen</div>
+      <div class="footer-note">Made with care • Healthy food for everyone</div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Tinggi Badan</title>
+</head>
+<body>
+
+    <h2>Data Tinggi Badan yang Diurutkan</h2>
+    <div id="output"></div>
+
+    <script>
+        // 1. Objek tinggi badan
+        let tinggi = {
+            Rose: 178,
+            Magnolia: 153,
+            Daisy: 165,
+            Jasmine: 161,
+            Violet: 159
+        };
+
+        // 2. Ubah objek menjadi array pasangan [nama, tinggi]
+        let arrTinggi = Object.entries(tinggi);
+
+        // 3. Urutkan berdasarkan nama (alfabet)
+        arrTinggi.sort(function(a, b) {
+            return a[0].localeCompare(b[0]);
+        });
+
+        // 4. Tampilkan ke halaman
+        let hasil = "";
+        for (let i = 0; i < arrTinggi.length; i++) {
+            hasil += `${arrTinggi[i][0]} : ${arrTinggi[i][1]} cm<br>`;
+        }
+
+        document.getElementById("output").innerHTML = hasil;
+    </script>
+
+</body>
+</html>

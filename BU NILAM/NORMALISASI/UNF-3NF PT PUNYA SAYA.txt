@@ -1,0 +1,45 @@
+UNF
+TrPenjualan =
+KodePelanggan + NamaPelanggan + AlamatPelanggan + NoPenjualan + tglPenjualan + KodeJenisPembayaran + JenisPembayaran + {KodeBarang + NamaBarang + Qty + Satuan + Harga + Jumlah} + KodePenjual + NamaPenjual +  NamaPenerima + Total + Bayar + Sisa + Kembali.
+
+1NF
+TrPenjualan =
+KodePelanggan + NamaPelanggan + AlamatPelanggan + TelpPelanggan + NamaPenerima  + KodeJenisPembayaran + JenisPembayaran + KodePenjual + NamaPenjual + Alamat Penjual + TelpPenjual + @NoPenjualan + tglPenjualan + @KodeBarang + NamaBarang + Qty + KodeSatuan + Satuan + Stok + Harga.
+
+2NF
+TrHeaderPenjualan =
+@KodePelanggan + NamaPelanggan + AlamatPelanggan + TelpPelanggan + NamaPenerima + @KodePenjual + NamaPenjual + Alamat Penjual + TelpPenjual + @NoPenjualan + tglPenjualan.
+
+TrDetaiPenjualan =
+@NoPenjualan + @KodeBarang + Qty. 
+
+MsBarang = 
+@KodeBarang + NamaBarang + @KodeSatuan + Satuan + Stok + Harga.
+
+MsJenisPembayaran = 
+@KodeJenisPembayaran + JenisPembayaran 
+
+3UNF 
+MsPelanggan = 
+@KodePelanggan + NamaPelanggan + AlamatPelanggan + TelpPelanggan + NamaPenerima.
+
+MsPenjual =
+@KodePenjual + NamaPenjual + AlamatPenjual + TelpPenjual
+
+MsBarang =
+@KodeBarang + NamaBarang + Stok + Harga + #KodeSatuan
+
+MsSatuan =
+@KodeSatuan + Satuan 
+
+MsJenisPembayaran =
+@KodeJenisPembayaran + JenisPembayaran
+
+TrHeaderPenjualan =
+@NoPenjualan + tglPenjualan +  #KodePenjual  + #KodePelanggan + #KodeJenisPembayaran  
+
+TrDetaiPenjualan =
+@NoPenjualan + #KodeBarang + Qty
+
+
+
